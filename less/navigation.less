@@ -1,17 +1,14 @@
 // Navigation code here
 
 nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex(column, nowrap, center, center);
     background-color: whitesmoke;
     h1 {
         font-size: 3rem;
         margin-top: 10px;
     }
     .links{
-        display: flex;
-        justify-content: space-around;
+        .flex(row, nowrap, space-around, center);
         width: 50%;
         padding-top: 10px;
         a{

@@ -163,6 +163,8 @@ p {
 nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   background-color: whitesmoke;
 }
@@ -172,7 +174,10 @@ nav h1 {
 }
 nav .links {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
   width: 50%;
   padding-top: 10px;
 }
