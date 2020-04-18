@@ -1,3 +1,4 @@
+@phone only screen and (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,6 +181,7 @@ nav .links {
   align-items: center;
   width: 50%;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 nav .links a {
   display: block;
@@ -203,8 +205,9 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
+  border-radius: 10px;
   width: 100%;
-  padding-top: 10px;
+  height: auto;
 }
 .home .space-images {
   display: flex;
@@ -212,10 +215,10 @@ footer {
   width: 100%;
 }
 .home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
   border-radius: 20px;
+  width: 28%;
   height: 100%;
+  margin: 20px 2.5%;
 }
 .home .visit-planets {
   padding: 15px;
@@ -242,12 +245,21 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border-radius: 2px;
+  background-color: #182929;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: fit-content;
+  padding: 5px 15px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
+  border-radius: 10px;
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
