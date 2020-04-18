@@ -167,6 +167,10 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.7;
 }
 nav h1 {
   font-size: 3rem;
@@ -269,12 +273,22 @@ footer {
 }
 .home .walk .walk-text .btn {
   border-radius: 2px;
-  background-color: #182929;
+  background-color: #22283A;
   color: white;
   font-size: 1.5rem;
   font-weight: 800;
   width: fit-content;
   padding: 5px 15px;
+  box-shadow: 0 5px 15px #22283A;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: whitesmoke;
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover::after {
+  opacity: 1;
 }
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text .btn {

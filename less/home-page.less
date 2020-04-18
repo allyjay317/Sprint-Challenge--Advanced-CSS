@@ -79,11 +79,21 @@
       }
 
       .btn {
-        .bubble(2px, darken(darkslategray, 12%), white);
+        .bubble(2px, @btn-bg-color, white);
         font-size: 1.5rem;
         font-weight: 800;
         width: fit-content;
         padding: 5px 15px;
+        box-shadow: 0 5px 15px @btn-bg-color;
+        transition: background-color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+        &:hover{
+          background-color: whitesmoke;
+          color: @btn-bg-color;
+          &::after{
+            opacity: 1;
+          }
+        }
         @media @phone{
           width: 100%;
           text-align: center;
