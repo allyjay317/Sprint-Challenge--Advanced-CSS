@@ -166,15 +166,18 @@ nav {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: transparent;
   position: fixed;
-  top: 0;
+  top: 80px;
   width: 100%;
   opacity: 0.7;
+  transition: background-color 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 nav h1 {
   font-size: 3rem;
   margin-top: 10px;
+  opacity: 1;
 }
 nav .links {
   display: flex;
@@ -185,6 +188,7 @@ nav .links {
   width: 50%;
   padding-top: 10px;
   padding-bottom: 10px;
+  opacity: 1;
 }
 nav .links a {
   display: block;
